@@ -23,7 +23,6 @@ module.exports = {
 
         const pinHash = bcrypt.hashSync(password, bcrypt.genSaltSync(5))
       
-
       let passObj = {
         username, 
         email, 
