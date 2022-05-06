@@ -1,66 +1,67 @@
-let alphabet = "abcdefghijklmnopqrstuvwxyz";
+let code = {
+    "a": "-",
+    "b": "_",
+    "c": "=",
+    "d": "+",
+    "e": "[",
+    "f": "]",
+    "g": "|",
+    "h": "}",
+    "i": ":",
+    "j": ";",
+    "k": "!",
+    "l": "@",
+    "m": "#",
+    "n": "$",
+    "o": "%",
+    "p": "^",
+    "q": "&",
+    "r": "*",
+    "s": "(",
+    "t": ")",
+    "u": "<",
+    "v": ">",
+    "w": ",",
+    "x": ".",
+    "y": "?",
+    "z": "/",
+    " ": "0"
+}
+let alphabet = "abcdefghijklmnopqrstuvwxyz ";
 let newalpha = "";
+let result = "";
 
+function encode(message, number) {
 
-
-function shift(n) {
-	for (let i = 0; i < alphabet.length; i++){
-		let offset = (i + n) % alphabet.length;
-		newalpha += alphabet[offset];
-	}
-}
-
-
-function encode(message, num) {
-    shift(num)
-
-    let result = [];
-    message = message.toLowerCase();
-    let words = message.split(" ")
-
-    for (let i = 0; i < words.length; i++) {
-        let index = alphabet.indexOf(words[i]);
-        result += newalpha[index];
-        for (let j = 0; j < words[i].length; j++) {
-            let word = words[i]
-            
-            
-        }
-        
+    
+    for (let i = 0; i < alphabet.length; i++){
+        let offset = (i + number) % alphabet.length;
+        newalpha += alphabet[offset];
     }
-    return result
+    
+    message = message.toLowerCase();
+    for (let i = 0; i < message.length; i++){
+        let index = alphabet.indexOf(message[i]);
+        result += newalpha[index];
+    }
+    
+    inverse(code) {
+        let retobj = {};
+        for(var key in obj){
+          retobj[code[key]] = key;
+        }
+        console.log(retobj);
+    }
 }
 
 
-console.log(encode("Hello Ethan", 1))
+encode("Hello Ethan", 1)
 
 
 
-// let code = {
-//     "a": "-",
-//     "b": "_",
-//     "c": "=",
-//     "d": "+",
-//     "e": "[",
-//     "f": "]",
-//     "g": "|",
-//     "h": "}",
-//     "i": ":",
-//     "j": ";",
-//     "k": "!",
-//     "l": "@",
-//     "m": "#",
-//     "n": "$",
-//     "o": "%",
-//     "p": "^",
-//     "q": "&",
-//     "r": "*",
-//     "s": "(",
-//     "t": ")",
-//     "u": "<",
-//     "v": ">",
-//     "w": ",",
-//     "x": ".",
-//     "y": "?",
-//     "z": "/"
+// function shift(num) {
+// 	for (let i = 0; i < alphabet.length; i++){
+// 		let offset = (i + num) % alphabet.length;
+// 		newalpha += alphabet[offset];
+// 	}
 // }

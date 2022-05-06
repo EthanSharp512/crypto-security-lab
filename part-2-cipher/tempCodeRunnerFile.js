@@ -1,2 +1,4 @@
-let index = alphabet.indexOf(word[j]);
-            result.push(newalpha[index]);
+ // (function (result) {
+    //     let double = result.invert(code);
+    //     return double
+    // })
