@@ -3,4 +3,10 @@ Open up a text editor and create your very own cipher. State all the logic behin
 Take this one step further and create your cipher in code.
 
 
-This cipher will be a simple ceaser cipher
+This cipher will start with a simple ceaser cipher that will adjust by a number submitted by the user. this will offset the alphabet by that number, and then it will be turned into a symbol which is determined by an object with key value pairs of letters to the symbols "  <>,.?/!@#$%^&*()-_=+[]|}:;  ".
+
+
+So if you were to pass the string “I love cryptography” and a number of 3, you would first get 
+
+
+
