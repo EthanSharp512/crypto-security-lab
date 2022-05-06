@@ -1,0 +1,8 @@
+For my example of a data breach, I decided to research something that I remember happening a while back. In 2011, Sony had a data breach in its PlayStation online network that led to people stealing users (77 million at the time) personal information.
+
+
+The motive behind the breach was to gain access to users data, like names, adresses, passwords, and credit card numbers. 
+
+Sony admitted to not paying enough attention to security when devoping the network software becasue they were rushing to get 'innovative' products on the market. Anonymus was also DDOSing sony because of recent lawsuits they filed that they disagreed with, and could have learned about a weakness in the security mechanisms which could allow other hackers to launch an SQL injection attack. Another possible reason was that they installed firmware through an update called Rebug which would turn a PS3 into a developer unit that had features consumers couldn't access, but gave the consoles trusted access to Sony's internal dev network.
+
+Sony hired an outside security firm to investigate the issue, but they also added extra security measures like two-step verification to ensure accounts are safer.
