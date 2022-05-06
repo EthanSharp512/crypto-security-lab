@@ -1,12 +1,8 @@
-Open up a text editor and create your very own cipher. State all the logic behind your cipher. Then, using your cipher, encipher the phrase “I love cryptography!” Display the result. Using your cipher again, decipher the ciphered phrase. Do you get “I love cryptography!”?
 
-Take this one step further and create your cipher in code.
+This cipher will start with a simple caesar cipher that will adjust by a number submitted by the user. this will offset the alphabet by that number, and then it will be turned into a symbol which is determined by an object with key value pairs of letters to the symbols "  <>,.?/!@#$%^&*()-_=+[]|}:;  ".
 
-
-This cipher will start with a simple ceaser cipher that will adjust by a number submitted by the user. this will offset the alphabet by that number, and then it will be turned into a symbol which is determined by an object with key value pairs of letters to the symbols "  <>,.?/!@#$%^&*()-_=+[]|}:;  ".
-
-
-So if you were to pass the string “I love cryptography” and a number of 3, you would first get 
+I wasnt able to work out replacing the string with the key value pairs of symbols, so for now it only does the caesar cipher.
+So if you were to pass the string “I love cryptography” and a number of 3, you would first get lcoryhcfuaswrjudska, then you could enter that into another function and it would output "   @=%*?}=]<-(,*;<+(!-   "
 
 
 
